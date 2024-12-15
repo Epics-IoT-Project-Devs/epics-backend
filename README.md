@@ -13,6 +13,7 @@ We are using Node + ExpressJS for the backend. This will be used to call the API
 - Copy the SSH link from the github repository
 - `git clone [SSH clone link]`
 - Make sure the `.env` file is updated (since it is in .gitignore)
+- Ensure all dependencies are there using `npm i`
 - Run `npm run dev` to start the server (alternate - `node --watch index.js`)
 
 ### Contribution
