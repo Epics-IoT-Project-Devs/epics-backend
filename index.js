@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 
 import sensorRoutes from "./routes/sensor.route.js";
+import csvRoutes from "./routes/csv.route.js";
 
 dotenv.config();
 
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 5000;
 
 // Routes
 app.use('/api', sensorRoutes);
+app.use('/csv', csvRoutes);
 
 app.get('/', (req, res) => {
 	res.json({ message: "Sensors" });
